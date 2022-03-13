@@ -1,0 +1,104 @@
+{
+    "type_map":		[ "Ag", "Au" ],
+    "mass_map":		[ 108, 196.967 ],
+    "init_data_prefix": "",
+    "init_data_sys":	[],
+    "pick_data":	"/data1/yinan/Ag-Au/simp/collect",
+    "sys_batch_size":   [
+        "auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto",	"auto"
+
+    ],
+
+    "training_iter0_model_path":	"/data1/yinan/Ag-Au/final/00.train/00[0-3]",
+    "training_init_model":		true,
+    "numb_models":	4,
+    "train_param":	"input.json",
+    "default_training_param" : {
+        "_comment": " model parameters",
+	"model": {
+            "type_map":     ["Ag", "Au"],
+            "descriptor" :{
+		"type":             "se_a",
+		"sel":              [150,150],
+		"rcut_smth":        2.00,
+		"rcut":             6.00,
+		"neuron":           [25, 50, 100],
+		"trainable":	    false,
+		"resnet_dt":        false,
+		"axis_neuron":      12,
+		"seed":             0,
+                "_comment":         " that's all"
+            },
+            "fitting_net" : {
+		"neuron":           [240, 240, 240],
+		"resnet_dt":        true,
+		"trainable":	    [false, false, false, true],
+		"seed":             1,
+		"_comment":         " that's all"
+            },
+            "_comment":     " that's all"
+	},
+
+	"learning_rate" :{
+            "type":         "exp",
+            "start_lr":     0.001,
+            "stop_lr":      3.51e-8,
+            "decay_steps":  10000,
+            "_comment":     "that's all"
+	},
+
+	"loss" :{
+            "start_pref_e": 100,
+            "limit_pref_e": 100,
+            "start_pref_f": 1,
+            "limit_pref_f": 1,
+            "start_pref_v": 0.9,
+            "limit_pref_v": 1.0,
+            "_comment":     " that's all"
+	},
+
+	"_comment": " traing controls",
+	"training" : {
+            "systems":      [],
+            "set_prefix":   "set",
+            "stop_batch":   2000000,
+            "batch_size":   2,
+
+            "seed":         1,
+
+            "_comment": " display and restart",
+            "_comment": " frequencies counted in batch",
+            "disp_file":    "lcurve.out",
+            "disp_freq":    2000,
+            "numb_test":    2,
+            "save_freq":    2000,
+            "save_ckpt":    "model.ckpt",
+            "load_ckpt":    "model.ckpt",
+            "disp_training":true,
+            "time_training":true,
+            "profiling":    false,
+            "profiling_file":"timeline.json",
+            "_comment":     "that's all"
+	},
+	"_comment":         "that's all"
+    },
+    "fp_style": "vasp",
+    "fp_skip_bad_box":	"length_ratio:5;height_ratio:5",
+    "shuffle_poscar":	false,
+    "fp_task_max":	100,
+    "fp_task_min":	0,
+    "fp_pp_path":	"vasp_input",
+    "fp_pp_files":	["POTCAR_Ag", "POTCAR_Au"],
+    "fp_incar":         "vasp_input/INCAR",
+
+    "use_clusters": false,
+    "labeled": false,
+    "init_pick_number":100,
+    "iter_pick_number":100,
+    "e_trust_lo":1e10,
+    "e_trust_hi":1e10,
+    "f_trust_lo":0.20,
+    "f_trust_hi":100.00,
+    "_comment": " that's all "
+}
+
